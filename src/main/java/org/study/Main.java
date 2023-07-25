@@ -1,7 +1,11 @@
 package org.study;
 
+import org.study.storage.DatabaseInitService;
+import org.study.storage.HibernateUtil;
+
 public class Main {
 	public static void main(String[] args) {
-		System.out.println("Hello world!");
+		new DatabaseInitService().initDB();
+
 	}
 }
